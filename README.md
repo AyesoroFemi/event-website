@@ -34,3 +34,28 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Hero component (Tailwind)
+
+A responsive Hero component was added at `components/Hero.jsx`. It uses Tailwind utility classes and images from the `public/` folder (for example `file.svg` and `globe.svg`).
+
+Quick usage:
+
+1. Ensure dependencies are installed: `npm install` (Tailwind is already listed in devDependencies).
+2. Import and include the component in `app/page.js`:
+
+```jsx
+import Hero from '../components/Hero'
+
+export default function Page() {
+	return (
+		<>
+			<Hero />
+			{/* other sections */}
+		</>
+	)
+}
+```
+
+If Tailwind isn't fully configured in your project, follow the official Tailwind + Next.js setup steps: https://tailwindcss.com/docs/guides/nextjs
+# event-website
